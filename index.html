@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./library.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Library</p>
+            <button type="button" id="newBook">Add Book</button>
+        </div>
+
+        <div class="content-wrapper">
+
+            <form action="" id="newBookForm" method="">
+                <div class="form-title">
+                    <legend> 
+                        Add a new Book.
+                    </legend>
+                </div>
+                
+                <div class="form-body">
+                    <span>Title</span>
+                    <label for="title"></label>
+                    <input type="text" id="title" name="bookTitle" required>
+
+                    <span>Author</span>
+                    <label for="author"></label>
+                    <input type="text" id="author" name="bookAuthor" required>
+
+                    <span>Book Length</span>
+                    <label for="pageLength"></label>
+                    <input type="number" id="pageLength" name="bookLength" required>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" id="submit" form="newBookForm">Add</button>
+                    <button type="button" id="back">Back</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

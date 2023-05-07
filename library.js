@@ -1,20 +1,22 @@
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = Boolean(read);
+  }
+
+  ifRead() {
+    this.read = !(this.read);
+  }
+}
+
 const hobbit = new Book('The Hobbit', 'Saul Goodman', 999, false);
 const toaru = new Book('Toaru No Majutsu', 'Kazuma', 1000, true);
 const mylibrary = [];
 
 mylibrary.push(hobbit);
 mylibrary.push(toaru);
-
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = Boolean(read);
-}
-
-Book.prototype.ifRead = function () {
-  this.read = !(this.read);
-};
 
 const contentBody = document.querySelector('.content-wrapper');
 const bookForm = document.querySelector('#newBookForm');
